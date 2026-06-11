@@ -62,7 +62,7 @@
 
 ### AI Feature Spec (Milestone 8)
 **Role** The AI acts as a playlist copywriter — it generates a short, evocative description of the playlist's vibe based on the songs provided.
-**Provider** OpenRouter API (`https://openrouter.ai/api/v1/chat/completions`) using model `openai/gpt-3.5-turbo`. API key is stored in `secret.js` (gitignored) and accessed via the global `API_KEY` variable.
+**Provider** OpenRouter API (`https://openrouter.ai/api/v1/chat/completions`) using model `openai/gpt-3.5-turbo`. API key is optional and is read from a local untracked global `API_KEY` value when present; if missing, the app uses the built-in fallback behavior.
 **Task** Given the playlist title, creator, and full song list (title, artist, duration), generate a 2–3 sentence description of the playlist's mood and energy that makes someone want to listen.
 **Inputs** Playlist title and creator name from `playlistData`; song details formatted as `"<title>" by <artist> (<duration>)` joined by commas. Sent as a single user message to the chat completions endpoint.
 **Output format** A 2–3 sentence plain-text description in an engaging, creative tone. Example: *This playlist, "yoncé," is a fun playlist that details some of Beyoncé's best songs. Be ready to get up and dance along to the upbeat songs in this playlist!*
@@ -77,31 +77,10 @@
 ### Decisions Log
 **Milestone 1**
     - On the first try, the model followed the wireframe too percisely, and I had to provide it with a wireframe that had more color and instructions to make the site more palatable.
-    - I told Claude to add more roundness to the stylization of the website and make it more 
-**Milestone 2** 
-    - 
-    -
-**Milestone 3**
-    -
-    -
-**Milestone 4**
-    -
-    -
-**Milestone 5**
-    -
-    -
-**Milestone 6**
-    -
-    -
+    - I told Claude to add more roundness to the stylization of the website and make it more streamline with my vision of the website.
 **Milestone 7**
-    -
-    -
-**Milestone 8**
-    -
-    -
-**Stretch**
-    -
-    -
+    - When the featured page was first generated, Claude created a separate playlist for the feautured playlist. I told it to use the already generated playlists to highlight a random featured playlist on this specific page.
+    - The modified formatting of the featured page to make it align with the formatting of the "All Playlists" page of the wesbsite.
 
 ### Data Schema
 playlists:
