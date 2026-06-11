@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Featured Playlist - Music Playlist Explorer</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="secret.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container top-bar">
+      <span class="site-title">Playlist Curator</span>
+      <div class="header-right">
+        <nav class="nav-links">
+          <a href="index.html">All Playlists</a>
+          <a href="featured.html" class="active">Featured</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="featured-page-main">
+    <div class="featured-page-panel">
+
+      <div class="featured-top">
+        <img src="assets/Jhené_Aiko_Playlist.jpg" alt="Featured Playlist Cover" class="featured-cover" id="featured-cover" />
+        <div class="featured-info-box">
+          <h2 class="featured-title" id="featured-title">Playlist Title</h2>
+          <p class="featured-creator" id="featured-creator">Creator</p>
+          <p class="featured-description" id="featured-description"></p>
+          <button type="button" class="featured-get-desc-btn" id="featured-get-desc-btn">get description</button>
+        </div>
+      </div>
+
+      <div class="featured-actions">
+        <button type="button" id="featured-edit-btn">✍️ Edit</button>
+        <button type="button" id="featured-delete-btn">🗑️ Delete</button>
+        <button type="button" id="featured-shuffle-btn"><span aria-hidden="true">🔀</span> Shuffle</button>
+      </div>
+
+      <ul class="featured-song-list" id="featured-song-list" aria-label="Featured playlist songs"></ul>
+    </div>
+  </main>
+
+  <div class="modal-overlay" aria-hidden="true">
+    <section class="modal-content" aria-labelledby="modal-playlist-title">
+      <button type="button" class="modal-close" aria-label="Close modal">✕</button>
+      <header class="modal-playlist-header">
+        <div class="modal-playlist-text">
+          <h2 id="modal-playlist-title">Playlist Title</h2>
+          <p class="modal-creator">Creator Name</p>
+          <p class="modal-description">
+            Placeholder description for this playlist. Includes mood and purpose details.
+          </p>
+        </div>
+        <img
+          src="https://placehold.co/320x320?text=Cover"
+          alt="Cover art for playlist details"
+          class="modal-playlist-cover"
+        />
+      </header>
+
+      <div class="modal-actions">
+        <button type="button">✍️ Edit</button>
+        <button type="button">🗑️ Delete</button>
+        <button type="button"><span aria-hidden="true">🔀</span> Shuffle</button>
+        <button type="button" class="get-description-btn"><span aria-hidden="true">✨</span> Get Description</button>
+      </div>
+
+      <ul class="modal-song-list" aria-label="Song list"></ul>
+    </section>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Music Playlist Explorer</p>
+    </div>
+  </footer>
+</body>
+</html>

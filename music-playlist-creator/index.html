@@ -7,21 +7,290 @@
     <title>Music Playlist Explorer</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="secret.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <!-- Your header content here -->
-    </header>
+  <header class="site-header">
+    <div class="container top-bar">
+      <span class="site-title">Playlist Curator</span>
+      <div class="header-right">
+        <nav class="nav-links">
+          <a href="index.html" class="active">All Playlists</a>
+          <a href="featured.html">Featured</a>
+        </nav>
+        <form class="search-controls" role="search" aria-label="Search playlists">
+          <label for="sort-playlists" class="visually-hidden">Sort playlists</label>
+          <select id="sort-playlists" name="sort">
+            <option value="popular">Most Popular</option>
+            <option value="recent">Most Recent</option>
+            <option value="name">Name (A-Z)</option>
+          </select>
+          <button type="button" class="btn-create" aria-label="Create custom playlist">+</button>
+        </form>
+      </div>
+    </div>
+  </header>
 
-    <main> 
-        <!-- Your main content here -->
-    </main>
+  <main id="main-content">
+    <section class="playlist-cards" aria-labelledby="gallery-heading">
+      <div class="container">
+        <h2 id="gallery-heading" class="visually-hidden">Current Playlists</h2>
+        <ul class="playlist-grid">
+          <li>
+            <article class="playlist-card" aria-label="Playlist by Ava">
+              <img
+                src="assets/Jhené_Aiko_Playlist.jpg"
+                alt="Jhené Aiko Playlist Cover"
+                class="playlist-cover"
+              />
+              <div class="playlist-meta">
+                <h3>jhené aiko efuru chilombo</h3>
+                <p class="creator-name">Namiko Browner</p>
+                <div class="card-actions">
+                  <button type="button" class="like-button" aria-label="Like playlist">
+                    <span aria-hidden="true">♡</span>
+                    <span>316</span>
+                  </button>
+                  <button type="button" class="play-button" aria-label="Play playlist">▶</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="playlist-card" aria-hidden="true">
+              <img
+                src="assets/Janet_Jackson_Playlist.jpg"
+                alt="Janet Jackson"
+                class="playlist-cover"
+              />
+              <div class="playlist-meta">
+                <h3>ms. jackson</h3>
+                <p class="creator-name">Blanket Jackson</p>
+                <div class="card-actions">
+                  <button type="button" class="like-button" aria-label="Like playlist">
+                    <span aria-hidden="true">♡</span>
+                    <span>589</span>
+                  </button>
+                  <button type="button" class="play-button" aria-label="Play playlist">▶</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="playlist-card " aria-hidden="true">
+              <img
+                src="assets/Beyoncé_Playlist.jpg"
+                alt="Beyoncé"
+                class="playlist-cover"
+              />
+              <div class="playlist-meta">
+                <h3>yoncé</h3>
+                <p class="creator-name">Blue I. Carter</p>
+                <div class="card-actions">
+                  <button type="button" class="like-button" aria-label="Like playlist">
+                    <span aria-hidden="true">♡</span>
+                    <span>711</span>
+                  </button>
+                  <button type="button" class="play-button" aria-label="Play playlist">▶</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="playlist-card " aria-hidden="true">
+              <img
+                src="assets/Monaleo_Playlist.jpg"
+                alt="Monaleo"
+                class="playlist-cover"
+              />
+              <div class="playlist-meta">
+                <h3>act a fooleo</h3>
+                <p class="creator-name">Stunna</p>
+                <div class="card-actions">
+                  <button type="button" class="like-button" aria-label="Like playlist">
+                    <span aria-hidden="true">♡</span>
+                    <span>240</span>
+                  </button>
+                  <button type="button" class="play-button" aria-label="Play playlist">▶</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="playlist-card " aria-hidden="true">
+              <img
+                src="assets/Brent_Faiyaz_Playlist.jpg"
+                alt="Brent Faiyaz"
+                class="playlist-cover"
+              />
+              <div class="playlist-meta">
+                <h3>brent</h3>
+                <p class="creator-name">London Day</p>
+                <div class="card-actions">
+                  <button type="button" class="like-button" aria-label="Like playlist">
+                    <span aria-hidden="true">♡</span>
+                    <span>272</span>
+                  </button>
+                  <button type="button" class="play-button" aria-label="Play playlist">▶</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="playlist-card " aria-hidden="true">
+              <img
+                src="assets/Anita_Baker_Playlist.jpg"
+                alt="Anita Baker"
+                class="playlist-cover"
+              />
+              <div class="playlist-meta">
+                <h3>anita b</h3>
+                <p class="creator-name">Ava Flanigan</p>
+                <div class="card-actions">
+                  <button type="button" class="like-button" aria-label="Like playlist">
+                    <span aria-hidden="true">♡</span>
+                    <span>425</span>
+                  </button>
+                  <button type="button" class="play-button" aria-label="Play playlist">▶</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="playlist-card " aria-hidden="true">
+              <img
+                src="assets/Minnie_Riperton_Playlist.jpg"
+                alt="Minnie Riperton"
+                class="playlist-cover"
+              />
+              <div class="playlist-meta">
+                <h3>minnie riperton
+                </h3>
+                <p class="creator-name">Maya Rudolph</p>
+                <div class="card-actions">
+                  <button type="button" class="like-button" aria-label="Like playlist">
+                    <span aria-hidden="true">♡</span>
+                    <span>664</span>
+                  </button>
+                  <button type="button" class="play-button" aria-label="Play playlist">▶</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="playlist-card " aria-hidden="true">
+              <img
+                src="assets/Future_Playlist.jpg"
+                alt="Future"
+                class="playlist-cover"
+              />
+              <div class="playlist-meta">
+                <h3>future</h3>
+                <p class="creator-name">Hendrix</p>
+                <div class="card-actions">
+                  <button type="button" class="like-button" aria-label="Like playlist">
+                    <span aria-hidden="true">♡</span>
+                    <span>888</span>
+                  </button>
+                  <button type="button" class="play-button" aria-label="Play playlist">▶</button>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-    <footer>
-        <!-- Your footer content here -->
-    </footer>
-    <script src="data/data.js"></script>
-    <script src="script.js"></script>
+  </main>
+
+  <!-- Create New Playlist Modal -->
+  <div class="create-modal-overlay" aria-hidden="true">
+    <section class="create-modal-content">
+      <button type="button" class="modal-close create-modal-close" aria-label="Close modal">✕</button>
+      <div class="create-modal-header">
+        <div class="create-modal-left">
+          <label class="create-label">playlist title</label>
+          <input type="text" id="new-playlist-title" class="create-input" placeholder="" />
+          <label class="create-label">playlist description</label>
+          <textarea id="new-playlist-description" class="create-textarea" placeholder=""></textarea>
+        </div>
+        <div class="create-modal-right">
+          <div class="create-playlist-cover">
+            <span class="create-cover-text">playlist pic</span>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="create-save-bar" id="create-save-playlist">Create Playlist</button>
+      <ul class="create-song-list" id="create-song-list" aria-label="Songs added to new playlist"></ul>
+      <div class="create-song-area">
+        <button type="button" class="create-add-song-btn" aria-label="Add songs to playlist">+</button>
+      </div>
+    </section>
+  </div>
+
+  <div class="modal-overlay" aria-hidden="true">
+    <section class="modal-content" aria-labelledby="modal-playlist-title">
+      <button type="button" class="modal-close" aria-label="Close modal">✕</button>
+      <header class="modal-playlist-header">
+        <div class="modal-playlist-text">
+          <h2 id="modal-playlist-title">Playlist Title</h2>
+          <p class="modal-creator">Creator Name</p>
+          <p class="modal-description">
+            Placeholder description for this playlist. Includes mood and purpose details.
+          </p>
+        </div>
+        <img
+          src="https://placehold.co/320x320?text=Cover"
+          alt="Cover art for playlist details"
+          class="modal-playlist-cover"
+        />
+      </header>
+
+      <div class="modal-actions">
+        <button type="button">✍️ Edit</button>
+        <button type="button">🗑️ Delete</button>
+        <button type="button"><span aria-hidden="true">🔀</span> Shuffle</button>
+        <button type="button" class="get-description-btn"><span aria-hidden="true">✨</span> Get Description</button>
+      </div>
+
+      <ul class="modal-song-list" aria-label="Song list">
+        <li class="modal-song-item">
+          <img src="https://placehold.co/60x60?text=Art" alt="" aria-hidden="true" class="song-thumb" />
+          <div class="song-info">
+            <p class="song-title">Song Title - Artist Name</p>
+          </div>
+          <button type="button" class="song-like" aria-label="Like song Song Title">♡</button>
+          <span class="like-count">5</span>
+        </li>
+        <li class="modal-song-item">
+          <img src="https://placehold.co/60x60?text=Art" alt="" aria-hidden="true" class="song-thumb" />
+          <div class="song-info">
+            <p class="song-title">Song Title - Artist Name</p>
+          </div>
+          <button type="button" class="song-like" aria-label="Like song Song Title">♡</button>
+          <span class="like-count">12</span>
+        </li>
+        <li class="modal-song-item">
+          <img src="https://placehold.co/60x60?text=Art" alt="" aria-hidden="true" class="song-thumb" />
+          <div class="song-info">
+            <p class="song-title">Song Title - Artist Name</p>
+          </div>
+          <button type="button" class="song-like" aria-label="Like song Song Title">♡</button>
+          <span class="like-count">8</span>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Music Playlist Explorer</p>
+    </div>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,61 @@
+{
+    "playlists": [
+        {"name": "Jhené Aiko", "description": "Favorite songs by Jhené Aiko", "songs": [
+            {"name": "Surrender", "artist": "Jhené Aiko", "duration": "4:17"}, 
+            {"name": "You Are Here", "artist": "Jhené Aiko", "duration": "3:39"}, 
+            {"name": "Wading", "artist": "Jhené Aiko", "duration": "4:36"}, 
+            {"name": "Pretty Bird (Freestyle)", "artist": "Jhené Aiko", "duration": "4:48"}, 
+            {"name": "Nobody", "artist": "Jhené Aiko", "duration": "4:16"} 
+        ]},
+        {"name": "Janet Jackson", "description": "Favorite songs by Janet Jackson", "songs": [
+            {"name": "I Get Lonely", "artist": "Janet Jackson", "duration": "5:17"}, 
+            {"name": "The Pleasure Principle", "artist": "Janet Jackson", "duration": "4:57"}, 
+            {"name": "That's The Way Love Goes", "artist": "Janet Jackson", "duration": "4:15"}, 
+            {"name": "Rhythm Nation", "artist": "Janet Jackson", "duration": "5:30"}, 
+            {"name": "Control", "artist": "Janet Jackson", "duration": "5:53"} 
+        ]},
+        {"name": "Beyoncé", "description": "Favorite songs by Beyoncé", "songs": [
+            {"name": "Dangerously In Love", "artist": "Beyoncé", "duration": "4:52"}, 
+            {"name": "Formation", "artist": "Beyoncé", "duration": "3:26"}, 
+            {"name": "Upgrade U (feat. JAY-Z)", "artist": "Beyoncé", "duration": "4:32"}, 
+            {"name": "Diva", "artist": "Beyoncé", "duration": "3:19"}, 
+            {"name": "HEATED", "artist": "Beyoncé", "duration": "4:20"}
+        ]},
+        {"name": "Monaleo", "description": "Favorite songs by Monaleo", "songs": [
+            {"name": "Putting Ya Dine", "artist": "Monaleo", "duration": "2:59"}, 
+            {"name": "Ranchero", "artist": "Monaleo", "duration": "2:54"}, 
+            {"name": "First (Remix)", "artist": "Monaleo", "duration": "2:43"}, 
+            {"name": "Miss Understood", "artist": "Monaleo", "duration": "2:55"}, 
+            {"name": "Locked In", "artist": "Monaleo", "duration": "2:30"}
+        ]},
+        {"name": "Brent Faiyaz", "description": "Favorite songs by Brent Faiyaz", "songs": [
+            {"name": "ALL MINE", "artist": "Brent Faiyaz", "duration": "3:35"}, 
+            {"name": "Been Away", "artist": "Brent Faiyaz", "duration": "3:43"}, 
+            {"name": "Clouded", "artist": "Brent Faiyaz", "duration": "1:49"}, 
+            {"name": "Best Time", "artist": "Brent Faiyaz", "duration": "1:22"}, 
+            {"name": "ROLE MODEL", "artist": "Brent Faiyaz", "duration": "3:13"} 
+        ]},
+        {"name": "Anita Baker", "description": "Favorite songs by Anita Baker", "songs": [
+            {"name": "Good Love", "artist": "Anita Baker", "duration": "5:32"}, 
+            {"name": "Whatever It Takes", "artist": "Anita Baker", "duration": "5:34"}, 
+            {"name": "You Bring Me Joy", "artist": "Anita Baker", "duration": "4:24"}, 
+            {"name": "Lately", "artist": "Anita Baker", "duration": "4:01"}, 
+            {"name": "Fairy Tales", "artist": "Anita Baker", "duration": "7:53"} 
+        ]},
+        {"name": "Minnie Riperton", "description": "Favorite songs by Minnie Riperton", "songs": [
+            {"name": "Les Fleurs", "artist": "Minnie Riperton", "duration": "3:19"}, 
+            {"name": "Lovin' You", "artist": "Minnie Riperton", "duration": "3:43"}, 
+            {"name": "Baby, This Love I Have", "artist": "Minnie Riperton", "duration": "4:10"}, 
+            {"name": "Inside My Love", "artist": "Minnie Riperton", "duration": "4:48"}, 
+            {"name": "Adventures In Paradise", "artist": "Minnie Riperton", "duration": "3:13"} 
+        ]
+            },
+        {"name": "Future", "description": "Favorite songs by Future", "songs": [
+            {"name": "Stick Talk", "artist": "Future", "duration": "2:50"}, 
+            {"name": "Like That", "artist": "Future", "duration": "4:27"}, 
+            {"name": "Mask Off", "artist": "Future", "duration": "3:24"}, 
+            {"name": "Turn On The Lights", "artist": "Future", "duration": "4:08"}, 
+            {"name": "News or Something", "artist": "Future", "duration": "3:33"}, 
+        ]}
+    ]
+}
