@@ -85,8 +85,13 @@
 ### Data Schema
 playlists:
     - name (string) — name of the plalist
+
     - description (string) — description of the plalist
+
     - songs (array of objects) - songs in the playlist
+
         * name (string) - name of the songs
+
         * artist (string) - song artist
+        
         * duration (string) - duration of song

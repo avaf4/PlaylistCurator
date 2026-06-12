@@ -228,6 +228,13 @@ body {
     color: #e74c3c;
 }
 
+/* Filled ♥ glyph renders smaller than outline ♡; bump it to keep size consistent */
+.like-button.liked span:first-child {
+    display: inline-block;
+    font-size: 1.15em;
+    line-height: 1;
+}
+
 .like-button:active {
     transform: none;
 }
@@ -420,6 +427,8 @@ body {
 
 .featured-song-like.liked {
     color: #e74c3c;
+    font-size: 1.84rem; /* compensate for smaller filled ♥ glyph (1.6rem outline) */
+    line-height: 1;
 }
 
 .featured-song-count {
@@ -652,6 +661,8 @@ body {
 
 .song-like.liked {
     color: #e74c3c;
+    font-size: 1.84rem; /* compensate for smaller filled ♥ glyph (1.6rem outline) */
+    line-height: 1;
 }
 
 .song-like:active {
@@ -949,17 +960,27 @@ body {
 .create-save-bar {
     width: 100%;
     border: none;
-    background: #d4c896;
-    padding: 18px 20px;
-    font-size: 1.2rem;
-    font-weight: 500;
+    background: #b89f4a;
+    padding: 20px 20px;
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
     cursor: pointer;
-    transition: background 140ms ease;
-    color: #333;
+    transition: background 140ms ease, transform 140ms ease, box-shadow 140ms ease;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .create-save-bar:hover {
-    background: #c4b886;
+    background: #a68d3a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.28);
+}
+
+.create-save-bar:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 
 .create-song-list {

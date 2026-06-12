@@ -4,7 +4,7 @@ const playlistData = {
     title: "jhené aiko efuru chilombo",
     creator: "Namiko Browner",
     description: "Favorite songs by Jhené Aiko",
-    coverImage: "assets/Jhené_Aiko_Playlist.jpg",
+    coverImage: "assets/thumbnails/Jhene_Aiko_Playlist.jpg",
     likes: 316,
     createdAt: 0,
     songs: [
@@ -19,7 +19,7 @@ const playlistData = {
     title: "ms. jackson",
     creator: "Blanket Jackson",
     description: "Favorite songs by Janet Jackson",
-    coverImage: "assets/Janet_Jackson_Playlist.jpg",
+    coverImage: "assets/thumbnails/Janet_Jackson_Playlist.jpg",
     likes: 589,
     createdAt: 1,
     songs: [
@@ -34,7 +34,7 @@ const playlistData = {
     title: "yoncé",
     creator: "Blue I. Carter",
     description: "Favorite songs by Beyoncé",
-    coverImage: "assets/Beyoncé_Playlist.jpg",
+    coverImage: "assets/thumbnails/Beyonce_Playlist.jpg",
     likes: 711,
     createdAt: 2,
     songs: [
@@ -46,10 +46,10 @@ const playlistData = {
     ]
   },
   3: {
-    title: "act a fooleo",
+    title: "monaleo",
     creator: "Stunna",
     description: "Favorite songs by Monaleo",
-    coverImage: "assets/Monaleo_Playlist.jpg",
+    coverImage: "assets/thumbnails/Monaleo_Playlist.jpg",
     likes: 240,
     createdAt: 3,
     songs: [
@@ -64,7 +64,7 @@ const playlistData = {
     title: "brent",
     creator: "London Day",
     description: "Favorite songs by Brent Faiyaz",
-    coverImage: "assets/Brent_Faiyaz_Playlist.jpg",
+    coverImage: "assets/thumbnails/Brent_Faiyaz_Playlist.jpg",
     likes: 272,
     createdAt: 4,
     songs: [
@@ -79,7 +79,7 @@ const playlistData = {
     title: "anita b",
     creator: "Ava Flanigan",
     description: "Favorite songs by Anita Baker",
-    coverImage: "assets/Anita_Baker_Playlist.jpg",
+    coverImage: "assets/thumbnails/Anita_Baker_Playlist.jpg",
     likes: 425,
     createdAt: 5,
     songs: [
@@ -94,7 +94,7 @@ const playlistData = {
     title: "minnie riperton",
     creator: "Maya Rudolph",
     description: "Favorite songs by Minnie Riperton",
-    coverImage: "assets/Minnie_Riperton_Playlist.jpg",
+    coverImage: "assets/thumbnails/Minnie_Riperton_Playlist.jpg",
     likes: 664,
     createdAt: 6,
     songs: [
@@ -109,7 +109,7 @@ const playlistData = {
     title: "future",
     creator: "Hendrix",
     description: "Favorite songs by Future",
-    coverImage: "assets/Future_Playlist.jpg",
+    coverImage: "assets/thumbnails/Future_Playlist.jpg",
     likes: 888,
     createdAt: 7,
     songs: [
